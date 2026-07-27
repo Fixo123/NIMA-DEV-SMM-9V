@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMM Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>SMM Panel</h1>
+    <form id="boostForm">
+      <label for="platform">Select Platform:</label>
+      <select id="platform" name="platform">
+        <option value="facebook">Facebook</option>
+        <option value="instagram">Instagram</option>
+        <option value="twitter">Twitter</option>
+        <option value="tiktok">TikTok</option>
+      </select>
+
+      <label for="post">Post Link:</label>
+      <input type="url" id="post" name="post" required />
+
+      <label for="boostTime">Boost Time (in minutes):</label>
+      <input type="number" id="boostTime" name="boostTime" min="1" required />
+
+      <button type="submit">Boost Post</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
